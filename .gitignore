@@ -1,0 +1,38 @@
+# ============================================================
+# GoRoute - Root .gitignore
+# ============================================================
+
+# Environment / secrets  (NEVER commit real keys)
+.env
+.env.*
+!.env.example
+
+# Python / Flask (backend)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+*.sqlite3
+*.db
+
+# Node / Vite (frontend)
+node_modules/
+dist/
+dist-ssr/
+*.local
+.vite/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Build artifacts / coverage
+coverage/
+htmlcov/
